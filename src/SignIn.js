@@ -54,7 +54,7 @@ export default function SignIn(props) {
           params: { id: id, pass: pass },
         })
         .then((res) => {
-          console.log(res.data);
+          //console.log(res.data);
           if (res.data.login === true) {
             //로그인 성공
             auth.functions.signIn(id, autoLoginMode, res.data.salt);

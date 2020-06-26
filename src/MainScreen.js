@@ -36,7 +36,6 @@ export default function MainScreen() {
   useEffect(() => {
     //메모들을 불러오자
     getMemos();
-    console.log(id, salt);
   }, []);
 
   //id와 salt 대조 후 일치하면 가져옴
