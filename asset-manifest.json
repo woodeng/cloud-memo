@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/cloud-memo/static/js/main.20465406.chunk.js",
-    "main.js.map": "/cloud-memo/static/js/main.20465406.chunk.js.map",
+    "main.js": "/cloud-memo/static/js/main.c71d5cf8.chunk.js",
+    "main.js.map": "/cloud-memo/static/js/main.c71d5cf8.chunk.js.map",
     "runtime-main.js": "/cloud-memo/static/js/runtime-main.c64c95be.js",
     "runtime-main.js.map": "/cloud-memo/static/js/runtime-main.c64c95be.js.map",
     "static/js/2.8fe82f82.chunk.js": "/cloud-memo/static/js/2.8fe82f82.chunk.js",
     "static/js/2.8fe82f82.chunk.js.map": "/cloud-memo/static/js/2.8fe82f82.chunk.js.map",
     "index.html": "/cloud-memo/index.html",
-    "precache-manifest.1da5d4d0ca4d1c33b955efcea802393b.js": "/cloud-memo/precache-manifest.1da5d4d0ca4d1c33b955efcea802393b.js",
+    "precache-manifest.e9f8065a5ac61ce407fe54751d804ea5.js": "/cloud-memo/precache-manifest.e9f8065a5ac61ce407fe54751d804ea5.js",
     "service-worker.js": "/cloud-memo/service-worker.js",
     "static/js/2.8fe82f82.chunk.js.LICENSE.txt": "/cloud-memo/static/js/2.8fe82f82.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c64c95be.js",
     "static/js/2.8fe82f82.chunk.js",
-    "static/js/main.20465406.chunk.js"
+    "static/js/main.c71d5cf8.chunk.js"
   ]
 }

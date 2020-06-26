@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ec403460965282bd22cc8a4671a93e47",
+    "revision": "106d67ab0447fed45948f2bbd9f14836",
     "url": "/cloud-memo/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cloud-memo/static/js/2.8fe82f82.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b0543dc7bd67871d0f8c",
-    "url": "/cloud-memo/static/js/main.20465406.chunk.js"
+    "revision": "a969c11cbe3d180b1c0a",
+    "url": "/cloud-memo/static/js/main.c71d5cf8.chunk.js"
   },
   {
     "revision": "27ef34088c082636fa1a",
