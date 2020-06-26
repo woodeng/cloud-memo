@@ -22,12 +22,15 @@ export default function MainScreen() {
   const auth = React.useContext(AuthContext);
   const [memos, setMemos] = React.useState([]);
   //sessionStorage, localStorage
-  const id = window.sessionStorage.getItem("id")
-    ? window.sessionStorage.getItem("id")
-    : (id = window.localStorage.getItem("id"));
-  const salt = window.sessionStorage.getItem("salt")
-    ? window.sessionStorage.getItem("salt")
-    : (id = window.localStorage.getItem("salt"));
+  const id =
+    window.sessionStorage.legnth == 2
+      ? window.sessionStorage.getItem("id")
+      : window.localStorage.getItem("id");
+  const salt =
+    window.sessionStorage.legnth == 2
+      ? window.sessionStorage.getItem("salt")
+      : window.localStorage.getItem("salt");
+
   const [isMenuOpen, setMenuOpen] = React.useState(false);
 
   useEffect(() => {
