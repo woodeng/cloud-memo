@@ -73,7 +73,7 @@ export default function ControlledExpansionPanels(props) {
 
   const updateApiCall = () => {
     axios
-      .post(`http://${ip.ip}/api/memos/update`, null, {
+      .post(`https://${ip.ip}/api/memos/update`, null, {
         params: { _id: _id, title: title, contents: contents },
       })
       .then((res) => {
@@ -84,7 +84,7 @@ export default function ControlledExpansionPanels(props) {
 
   const deleteApiCall = () => {
     axios
-      .delete(`http://${ip.ip}/api/memos/delete`, {
+      .delete(`https://${ip.ip}/api/memos/delete`, {
         params: { _id: _id },
       })
       .then((res) => {
@@ -105,7 +105,7 @@ export default function ControlledExpansionPanels(props) {
 
   const fileRemove = () => {
     axios
-      .post(`http://${ip.ip}/api/memos/remove`, null, {
+      .post(`https://${ip.ip}/api/memos/remove`, null, {
         params: { _id: _id },
       })
       .then((res) => {
@@ -121,7 +121,7 @@ export default function ControlledExpansionPanels(props) {
     setFileName(file.name);
     axios({
       method: "post",
-      url: `http://${ip.ip}/api/memos/upload`,
+      url: `https://${ip.ip}/api/memos/upload`,
       data,
       params: { _id: _id },
       headers: { "Content-Type": "multipart/form-data" },

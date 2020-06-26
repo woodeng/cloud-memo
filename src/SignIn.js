@@ -50,7 +50,7 @@ export default function SignIn(props) {
       setOpen(true);
     } else {
       axios
-        .get(`http://${ip.ip}/api/members`, {
+        .get(`https://${ip.ip}/api/members`, {
           params: { id: id, pass: pass },
         })
         .then((res) => {

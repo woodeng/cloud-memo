@@ -38,7 +38,7 @@ export default function MainScreen() {
   //id와 salt 대조 후 일치하면 가져옴
   const getMemos = () => {
     axios
-      .get(`http://${ip.ip}/api/memos`, {
+      .get(`https://${ip.ip}/api/memos`, {
         params: { id: id, salt: salt },
       })
       .then((res) => {
@@ -48,7 +48,7 @@ export default function MainScreen() {
 
   const createMemo = () => {
     axios
-      .post(`http://${ip.ip}/api/memos/write`, null, {
+      .post(`https://${ip.ip}/api/memos/write`, null, {
         params: { id: id },
       })
       .then((res) => {

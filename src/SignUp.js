@@ -62,7 +62,7 @@ export default function SignUp() {
 
   const createProcess = () => {
     axios
-      .post(`http://${ip.ip}/api/members`, null, {
+      .post(`https://${ip.ip}/api/members`, null, {
         params: { id: id, pass: pass },
       })
       .then((res) => {

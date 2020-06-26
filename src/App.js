@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo } from "react";
 import {
   Route,
-  Switch,
+  BrowserRouter,
   Redirect,
   BrowserRouter as Router,
 } from "react-router-dom";
@@ -47,26 +47,22 @@ function App() {
 
   return (
     <AuthContext.Provider value={{ functions: authContext }}>
-      <Router>
-        <main>
-          <Switch>
-            <Route
-              exact
-              path="/"
-              render={() => {
-                return !isLogin ? (
-                  <Redirect to="/signin" />
-                ) : (
-                  <Redirect to="/main" />
-                );
-              }}
-            />
-            <Route path="/signin" component={SignIn} />
-            <Route path="/signup" component={SignUp} />
-            <Route path="/main" component={MainScreen} />
-          </Switch>
-        </main>
-      </Router>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Route
+          exact
+          path="/"
+          render={() => {
+            return !isLogin ? (
+              <Redirect to="/signin" />
+            ) : (
+              <Redirect to="/main" />
+            );
+          }}
+        />
+        <Route path="/signin" component={SignIn} />
+        <Route path="/signup" component={SignUp} />
+        <Route path="/main" component={MainScreen} />
+      </BrowserRouter>
     </AuthContext.Provider>
   );
 }
