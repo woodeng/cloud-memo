@@ -23,11 +23,11 @@ export default function MainScreen() {
   const [memos, setMemos] = React.useState([]);
   //sessionStorage, localStorage
   const id =
-    window.sessionStorage.legnth == 2
+    window.sessionStorage.length == 2
       ? window.sessionStorage.getItem("id")
       : window.localStorage.getItem("id");
   const salt =
-    window.sessionStorage.legnth == 2
+    window.sessionStorage.length == 2
       ? window.sessionStorage.getItem("salt")
       : window.localStorage.getItem("salt");
 
@@ -36,6 +36,7 @@ export default function MainScreen() {
   useEffect(() => {
     //메모들을 불러오자
     getMemos();
+    console.log(id, salt);
   }, []);
 
   //id와 salt 대조 후 일치하면 가져옴
@@ -45,7 +46,11 @@ export default function MainScreen() {
         params: { id: id, salt: salt },
       })
       .then((res) => {
-        setMemos(res.data);
+        if (res.data === "wrong access") {
+          console.log(res.data);
+        } else {
+          setMemos(res.data);
+        }
       });
   };
 
@@ -83,7 +88,7 @@ export default function MainScreen() {
       <h1 display="flex" align="center">
         안녕하세요!
       </h1>
-      {memos.map((c) => (
+      {memos.map((c, i) => (
         <Memo
           key={c._id}
           _id={c._id}
