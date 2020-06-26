@@ -45,6 +45,8 @@ function App() {
     //local storage와 session storage를 모두 확인한다
   }, []);
 
+  document.title = "Cloud Memo";
+
   return (
     <AuthContext.Provider value={{ functions: authContext }}>
       <BrowserRouter basename={process.env.PUBLIC_URL}>
