@@ -9,7 +9,7 @@ ____________
 ------------------
 frontend: React.js
 
-backend: node.js
+backend: node.js, express
 
 server: amazon ec2
 
